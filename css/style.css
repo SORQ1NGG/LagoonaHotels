@@ -1,0 +1,761 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Muller Light';
+    src: url('fonts/MullerLight.woff2') format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Regular';
+    src: url('fonts/MullerRegular.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Bold';
+    src: url('fonts/MullerBold.woff2') format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Muller Regular', sans-serif;
+    background: #F1F1F1;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.heading {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 40px;
+    color: #333333;
+}
+
+strong {
+    font-family: 'Muller Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #CC9933;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-container {
+    padding-top: 30px;
+    align-items: center;
+}
+
+.header-info {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header-telephone {
+    padding-left: 40px;
+    margin-right: auto;
+    align-items: center;
+    color: #666;
+}
+
+.personal-area {
+    padding-left: 28px;
+    background-image: url('/img/personal-area-img.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    color: #CC9933;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.nav {
+    display: flex;
+    background-color: #fff;
+    padding: 15px 45px;
+    border-radius: 15px;
+    margin-bottom: 70px;
+}
+
+.nav-call {
+    margin-left: auto;
+    border-left: 1px solid #E1E1E1;
+    padding-left: 65px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav_item-link {
+    color: #666;
+}
+
+.nav-list_item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.header-btn:not(:last-child) {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 13px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #CC9933;
+}
+
+.text-header-btn {
+    color: #CC9933;
+}
+
+/* special-offers */
+
+.section-special-offers {
+    margin-bottom: 70px;
+}
+
+.nav-special-offers {
+    display: flex;
+    flex-grow: 1;
+}
+
+.heading-card-special-offers {
+    margin: 0 0 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.special-offers-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+}
+
+.first-card-special-offers {
+    width: 573px;
+    height: 258px;
+    background-image: url('/img/back-maldivian-island.png');
+}
+
+.second-card-special-offers {
+    width: 573px;
+    height: 258px;
+    background-image: url('/img/back-hot-tour.png');
+}
+
+.third-card-special-offers {
+    align-self: center;
+    width: 573px;
+    height: 540px;
+    background-image: url('/img/back-suits.jpeg');
+}
+
+.heading-suits-card {
+    margin-bottom: 15px;
+    max-width: 300px;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.description-text-card {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 47px;
+    opacity: 0.8;
+}
+
+.description-suits-text {
+    font-size: 30px;
+}
+
+.special-offers-list {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.special-offers-list:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.two-left-card-item {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.content-card {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    width: 312px;
+}
+
+.more-details-special-offers-link {
+    color: #CC9933;
+    background-image: url('/img/arrow-more-details.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+/* about-us */
+
+.section-about-us {
+    margin-bottom: 70px;
+}
+
+.description-about-us {
+    margin: 0;
+    line-height: 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* services-list */
+
+.section-services {
+    margin-bottom: 70px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services-list_item {
+    min-height: 330px;  
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 180px 126px 50px 45px;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.first-card-services {
+    position: relative;
+    background-image: url('/img/first-card-img-services.png');
+}
+
+.second-card-services {
+    background-image: url('/img/second-card-img-services.png');
+}
+
+.third-card-services {
+    background-image: url('/img/third-card-img-services.png');
+}
+
+.fourth-card-services {
+    background-image: url('/img/fourth-card-img-services.png');
+} 
+
+.heading-card-services {
+    display: inline-block;
+    padding-right: 20px;
+    background-image: url('/img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    color: #CC9933;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.description-services {
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000;
+}
+
+.services-list_item:last-child, .second-card-services {
+    margin-right: 0;
+}
+
+/* advantages */
+
+.section-advantages {
+    margin-bottom: 70px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.advantages-card-icons {
+    display: inline-block;
+    width: 67px;
+    height: 64px;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.first-icon-advantages {
+    background-image: url('/img/bathtub.svg');
+}
+
+.second-icon-advantages {
+    background-image: url('/img/hanger.svg');
+}
+
+.third-icon-advantages {
+    background-image: url('/img/heating.svg');
+}
+
+.fourth-icon-advantages {
+    background-image: url('/img/hotel-key.svg');
+}
+
+.fifth-icon-advantages {
+    background-image: url('/img/parking.svg');
+}
+
+.sixth-icon-advantages {
+    background-image: url('/img/reception.svg');
+}
+
+.seventh-icon-advantages {
+    background-image: url('/img/security-box.svg');
+}
+
+.eighth-icon-advantages {
+    background-image: url('/img/swimming-pool.svg');
+}
+
+.advantages-list_item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20.33%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 275px;
+    height: 275px;
+    background-color: #fff;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.content-sercices-card-advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px 42px 41px 40px;
+    width: 275px;
+}
+
+
+.advantages-list_item:last-child, .fourth-card-advantages {
+    margin-right: 0;
+}
+
+.advantages-card-description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+/* accomodation */
+
+.accommodation-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.accommodation-list_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 41px;
+    width: 374px;
+    height: 440px;
+    margin: 0 23px 23px 0;
+    padding-left: 45px;
+    background-color: #fff;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.first-card-accommodation {
+    background-image: url('/img/lagoona-espanola.png');
+}
+
+.second-card-accommodation {
+    background-image: url('/img/lagoona-son-tipicas.png');
+}
+
+.third-card-accommodation {
+    margin-right: 0;
+    background-image: url('/img/lagoona-le-da-guerra.png');
+}
+
+.fourth-card-accommodation {
+    background-image: url('/img/lagoona-mentira-pidalosa.png');
+}
+
+.fifth-card-accommodation {
+    background-image: url('/img/Lagoona-empujar-la-creatividad.png');
+}
+
+.sixth-card-accommodation {
+    margin-right: 0;
+    background-image: url('/img/Lagoona-el-retorno.png');
+}
+
+.seventh-card-accommodation {
+    background-image: url('/img/Lagoona-mentira-piadosa.png');
+}
+
+.eighth-card-accommodation {
+    background-image: url('/img/Lagoona-suerte-siguió-siempre.png');
+}
+
+.ninth-card-accommodation {
+    margin-bottom: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    text-align: center;
+    background-image: url('/img/more-details-accommodation.png');
+}
+
+.ratings-accommodation {
+    margin-left: 44px;
+}
+
+.rating-accommodation-img {
+    width: 14px;
+    height: 14px;
+    color: #CC9933;
+}
+
+.accommodation-hotels-info {
+    display: flex;
+}
+
+.price-accommodation {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.price-accommodation strong {
+    color: #000;
+    font-size: 18px;
+}
+
+.price-accommodation b {
+    color: #000;
+    font-size: 16px;
+}
+
+.name-hotels-accommodation {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+}
+
+.country-city-accommodation {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999;
+}
+
+.show-more-details-advantages {
+    background-image: url('/img/arrow-white.svg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.section-accommodation {
+    margin-bottom: 70px;
+}
+
+/* section-form */
+
+.section-form {
+    border-radius: 15px;
+    background-color: #E9E9E9;
+    padding: 97px 45px 71px;
+    margin-bottom: 70px;
+}
+
+.heading-form {
+    text-indent: 0;
+}
+
+.form {
+    display: flex;
+    padding: 28px;
+    border-radius: 15px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.form-item:not(:last-child) {
+    flex-direction: column;
+    margin-right: 15px;
+    border-right: 1px solid #E9E9E9;
+}
+
+.form-title {
+    margin-bottom: 15px;
+    display: inline-block;
+    font-family: 'Muller Regular', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.form-country-arrival {
+    border-right: 1px solid #E9E9E9;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 0.5;
+}
+
+.input {
+    border: none;
+    margin-right: 15px;
+}
+
+.input-number {
+    width: 142px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.input-arrow {
+    background-image: url('/img/arrow-form.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* section-contacts */
+
+.section-contacts {
+    margin-bottom: 19px;
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 44px 46px;
+    border-radius: 15px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.contacts-item {
+    display: flex;
+    margin-bottom: 23px;
+    align-items: baseline;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.contacts-title {
+    margin-right: 70px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contacts-phone-title {
+    margin-right: 45px;
+}
+
+.contacts-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-text-email {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999;
+}
+
+.email {
+    margin-top: 3px;
+}
+
+.contacts-schedule-description {
+    width: 190px;
+    font-family: 'Muller Regular', sans-serif;
+}
+
+.contacts-adress-description, 
+.contacts-schedule-description, 
+.contacts-adress-description, 
+.contacts-phone-description,
+.contacts-email-description {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contacts-schedule {
+    margin-bottom: 45px;
+}
+
+.btn-contacts {
+    padding: 27px 29px;
+}
+
+/* footer */
+
+.footer-container {
+    border-radius: 15px;
+    background-color: #333;;
+    padding: 51px 51px 46px 52px;
+}
+
+.content-footer {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    justify-content: space-between;
+}
+
+.content-footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.description-footer-left:not(:last-child) {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.content-footer-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-address {
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.footer-phone {
+    margin-bottom: 15px;
+}
+
+.footer-email-link:not(:last-child), .footer-phone-link:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.footer-phone, .footer-email {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+.footer-social-sova {
+    background-image: url('/img/sova.svg');
+}
+
+.footer-social-twitter {
+    background-image: url('/img/twitter.svg');
+}
+
+.footer-social-facebook {
+    background-image: url('/img/facebook.svg');
+}
+
+.footer-social-vk {
+    background-image: url('/img/social.svg');
+}
+
+.footer-social-instagram {
+    background-image: url('/img/instagram.svg');
+}
+
+.footer-img {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.footer-img-logo {
+    position: absolute;
+    top: 97px;
+    right: 92px;
+}
